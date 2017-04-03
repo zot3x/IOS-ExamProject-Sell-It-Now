@@ -12,7 +12,22 @@
 		1068DC971E7EAC5B00BFFB12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1068DC951E7EAC5B00BFFB12 /* Main.storyboard */; };
 		1068DC991E7EAC5B00BFFB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1068DC981E7EAC5B00BFFB12 /* Assets.xcassets */; };
 		1068DC9C1E7EAC5B00BFFB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1068DC9A1E7EAC5B00BFFB12 /* LaunchScreen.storyboard */; };
+		259364061E9204370095FD5B /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259364051E9204370095FD5B /* SlideMenuControllerSwift.framework */; };
+		259364091E9206030095FD5B /* SlideMenuControllerSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 259364051E9204370095FD5B /* SlideMenuControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		259364081E9205DE0095FD5B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				259364091E9206030095FD5B /* SlideMenuControllerSwift.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1068DC8E1E7EAC5B00BFFB12 /* Sell It Now.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sell It Now.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +37,7 @@
 		1068DC981E7EAC5B00BFFB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1068DC9B1E7EAC5B00BFFB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1068DC9D1E7EAC5B00BFFB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		259364051E9204370095FD5B /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = Carthage/Build/iOS/SlideMenuControllerSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259364061E9204370095FD5B /* SlideMenuControllerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,7 @@
 			children = (
 				1068DC901E7EAC5B00BFFB12 /* Sell It Now */,
 				1068DC8F1E7EAC5B00BFFB12 /* Products */,
+				259364041E9204370095FD5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +82,14 @@
 			path = "Sell It Now";
 			sourceTree = "<group>";
 		};
+		259364041E9204370095FD5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				259364051E9204370095FD5B /* SlideMenuControllerSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +100,7 @@
 				1068DC8A1E7EAC5B00BFFB12 /* Sources */,
 				1068DC8B1E7EAC5B00BFFB12 /* Frameworks */,
 				1068DC8C1E7EAC5B00BFFB12 /* Resources */,
+				259364081E9205DE0095FD5B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -260,6 +287,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Sell It Now/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DTU.Sell-It-Now";
@@ -272,6 +303,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Sell It Now/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DTU.Sell-It-Now";
@@ -299,6 +334,7 @@
 				1068DCA21E7EAC5B00BFFB12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
